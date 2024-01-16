@@ -53,8 +53,8 @@ export default function ProductForm({
       for (const file of files) {
         formData.append('file', file);
       }
-      formData.append('upload_preset', 'Ecommerce_Panel');
-      const data = await fetch('https://api.cloudinary.com/v1_1/dyunqrxki/image/upload', {
+      formData.append('upload_preset', 'Mariam');
+      const data = await fetch('https://api.cloudinary.com/v1_1/dxmjwkraj/image/upload', {
         method: 'POST',
         body: formData
         }).then(r => r.json());
