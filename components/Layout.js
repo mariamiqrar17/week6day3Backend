@@ -5,8 +5,8 @@ import Logo from "@/components/Logo";
 
 export default function Layout({children}) {
   const [showNav,setShowNav] = useState(false);
-  // const { data: session } = useSession();
-  // if (!session) {
+  const { data: session } = useSession();
+  if (!session) {
     return (
       <div className='bg-blue-900 w-screen h-screen flex items-center justify-center'>
         <div className="text-center">
@@ -42,3 +42,4 @@ export default function Layout({children}) {
       </div>
     </div>
   );
+}
